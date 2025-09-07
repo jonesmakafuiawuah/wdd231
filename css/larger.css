@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px){
+  body{padding:1.5rem}
+  .hamburger{display:none}
+
+  /* show horizontal nav */
+  .main-nav{display:block}
+  .main-nav .nav-list{display:flex;gap:0.5rem;justify-content:flex-end;align-items:center;padding-right:0}
+  .main-nav .nav-list li{position:relative}
+  .main-nav .nav-list li a{padding:0.6rem 0.9rem;color:white}
+
+  /* submenu styling like screenshot (dark dropdown) */
+  .main-nav .nav-list .has-sub .submenu{
+    display:none;
+    position:absolute;
+    top:110%;
+    left:0;
+    min-width:200px;
+    background:var(--nav-bg);
+    border-radius:6px;
+    box-shadow:0 8px 20px rgba(5,10,15,0.4);
+    padding:0.4rem 0;
+  }
+  .main-nav .nav-list .has-sub:hover .submenu{display:block}
+  .main-nav .nav-list .submenu li a{color:#ddd;padding:0.6rem 1rem;display:block}
+  .main-nav .nav-list .submenu li a:hover{background:#0b2a37;color:var(--accent)}
+}
+
+/* larger layout course grid */
+@media screen and (min-width:1000px){
+  .course-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+
+/* Skills Page */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card {
+    transition: transform 0.2s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+}
