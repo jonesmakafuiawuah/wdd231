@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #004e64;   /* dark teal */
+  --secondary-color: #00a5cf; /* aqua */
+  --accent-color: #9fffcb;    /* light green */
+  --success-color: #28a745;   /* green for success */
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.thank-you-card {
+  background: white;
+  border-radius: 12px;
+  padding: 4rem 2rem 2rem;  /* more top padding */
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem;             /* prevents clipping on small screens */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-wrap: break-word;
+}
+/* Green check circle */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: var(--success-color);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;   /* remove negative margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: -35px;                 /* float above the card */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Title */
+.thank-you-card h2 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+/* Submitted Data Box */
+.submission-data {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: var(--accent-color);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.submission-data p {
+  margin: 0.5rem 0;
+}
+
+.submission-data strong {
+  color: var(--dark-color);
+}
+
+
+
+
+/* Message */
+.thank-you-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.thank-you-card button {
+  background: var(--success-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.thank-you-card button:hover {
+  background: #218838; /* darker green */
+}
+
+@media (max-width: 480px) {
+  .thank-you-card {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .submission-data {
+    font-size: 0.85rem;
+  }
+}

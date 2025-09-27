@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Directory | Jones Chamber of Commerce</title>
+  <meta name="description" content="Jones Chamber of Commerce business directory">
+  <meta name="author" content="Jones Makafui Awuah">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Jones Chamber of Commerce">
+  <meta property="og:description" content="Discover and connect with Jones businesses.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:url" content="https://yourchamberdomain.com">
+
+  <link rel="stylesheet" href="styles/all.min.css">
+  <link rel="stylesheet" href="styles/base.css">
+  
+
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="branding">
+      <img src="images/logo.jpeg" alt="Chamber Logo" class="logo">
+      <h1>Jones Chamber of Commerce</h1>
+    </div>
+
+    <div class="header-controls">
+      <!-- icons -->
+      <div class="header-icons" aria-hidden="false">
+        <button id="weatherBtn" class="icon-btn weather-btn" aria-label="Current weather" title="Current weather">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="17" cy="7" r="3" fill="currentColor" />
+              <path d="M6.5 14.5a4.5 4.5 0 0 1 4.5-4.5h.5" />
+              <path d="M16 17H7a4 4 0 0 1 0-8 4.5 4.5 0 0 1 4.28 3.08" />
+            </g>
+          </svg>
+          <span class="temp-label">24°C</span>
+        </button>
+
+        <button id="profileBtn" class="icon-btn profile-btn" aria-label="User menu" title="User menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="currentColor">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M4 20c0-3.3 2.7-6 8-6s8 2.7 8 6"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <!-- hamburger -->
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <!-- nav -->
+      <nav id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+
+   
+
+<!-- Theme Toggle Icon -->
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"/></svg>
+    </button>
+
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-hidden="false">
+      <img src="images/hero.jpeg" alt="City view hero image">
+      <button class="cta">Keynote Tickets</button>
+    </section>
+
+    <!-- Info panels --> <section class="info-panels"> 
+        <div class="panel"> 
+            <h3>Events</h3> 
+            <div class="content">No upcoming events — add sample events here.</div> 
+        </div> 
+        <div class="panel"> 
+            <h3>Current Weather</h3> 
+            <img src="images/cloud.png" alt="weather icon" width="30"height="30"> 
+            <p><strong id="weatherTemp">24°C</strong></p> <p id="weatherDesc">Partly Cloudy</p> 
+            <p>High: 29° Low: 18°</p> 
+            <p>Humidity: 34%</p> 
+            <p>Sunrise: 7:30am</p> 
+            <p>Sunset: 9:59pm</p> 
+        </div> 
+
+            <div class="panel"> 
+                <h3>Weather Forecast</h3> 
+                <p>Today: 29°C</p>
+                <p>Tomorrow: 28°C</p> 
+                <p>Thu: 26°C</p> </div> 
+            </section>
+
+  
+
+    <!-- Directory controls -->
+    <section class="directory-controls">
+      <div class="search-filter">
+        <label for="searchInput" class="visually-hidden">Search members</label>
+        <input id="searchInput" type="search" placeholder="Search members..." />
+        <label for="filterSelect" class="visually-hidden">Filter by membership</label>
+        <select id="filterSelect">
+          <option value="all">All Memberships</option>
+          <option value="3">Gold</option>
+          <option value="2">Silver</option>
+          <option value="1">Member</option>
+        </select>
+        <label for="sortSelect" class="visually-hidden">Sort members</label>
+        <select id="sortSelect">
+          <option value="name-asc">Name (A–Z)</option>
+          <option value="name-desc">Name (Z–A)</option>
+          <option value="membership-desc">Membership (Gold → Member)</option>
+        </select>
+      </div>
+
+      <div class="view-toggle" role="toolbar" aria-label="View toggle">
+        <button id="grid" aria-pressed="true">Grid View</button>
+        <button id="list" aria-pressed="false">List View</button>
+      </div>
+    </section>
+
+    <!-- Members -->
+    <section id="members" class="grid" aria-live="polite" aria-label="Member listings">
+      <!-- JS will inject member cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p><strong>Jones Chamber of Commerce</strong></p>
+      <p>U98 Highlife Street</p>
+      <p>Jones, Ghana 333</p>
+      <p><a href="mailto:info@jonescc.org">info@jonescc.org</a></p>
+      <p>(233) 24-340-6600</p>
+    </div>
+    <div class="footer-center">
+      <a href="#"><img src="images/youtube.jpeg" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.jpeg" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-right">
+      <p>WDD231 Class Project</p>
+      <p>Jones Makafui Awuah</p>
+      <p>&copy; <span id="year"></span> Jones Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+  
+  <script>
+    // Footer year + last modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
