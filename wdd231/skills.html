@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Course Skills for Jones Makafui Awuah — WDD231" />
+  <meta name="author" content="Jones Makafui Awuah">
+  <title>WDD231 — Course Skills </title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS (defer) -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <!-- HEADER: logo svg, name span, hamburger for small screens -->
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="images/logo.svg" alt="AJ Consult style logo" class="logo">
+      <span class="site-name">Jones Makafui Awuah</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="has-sub">
+          <a href="about.html">About Me ▾</a>
+          <ul class="submenu">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <a href="#">Chamber ▾</a>
+          <ul class="submenu">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="finals.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Skills</h1>
+
+    <section class="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML5</h3>
+          <p>Building semantic, accessible web pages with clean markup.</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS3</h3>
+          <p>Responsive layouts, Flexbox, Grid, animations, and styling best practices.</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Interactive features, DOM manipulation, ES6+, and API integration.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Git & GitHub</h3>
+          <p>Version control, collaboration, and project hosting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <h2>Soft Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Problem Solving</h3>
+          <p>Finding effective solutions through research and creativity.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Teamwork</h3>
+          <p>Collaborating effectively and communicating ideas clearly.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Adaptability</h3>
+          <p>Quickly learning new technologies and adjusting to challenges.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Time Management</h3>
+          <p>Organizing tasks and meeting deadlines consistently.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="#">Twitter</a>
+    </div>
+    <p>&copy; <span id="year"></span> | Jones Makafui Awuah | Accra/Ghana </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

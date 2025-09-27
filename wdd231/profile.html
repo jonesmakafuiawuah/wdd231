@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Course Profile Page for Jones Makafui Awuah — WDD231" />
+  <meta name="author" content="Jones Makafui Awuah">
+  <title>WDD231 — Course Profile </title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/profile.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS (defer) -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <!-- HEADER: logo svg, name span, hamburger for small screens -->
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="images/logo.svg" alt="AJ Consult style logo" class="logo">
+      <span class="site-name">Jones Makafui Awuah</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="has-sub">
+          <a href="about.html">About Me ▾</a>
+          <ul class="submenu">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <a href="#">Chamber ▾</a>
+          <ul class="submenu">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="finals.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Me</h1>
+
+    <section>
+      <h2>Background</h2>
+      <p>
+        I am Jones Makafui Awuah, currently studying web design and development. 
+        My background combines creativity and problem-solving, and I enjoy 
+        building clean, responsive, and accessible websites.
+      </p>
+    </section>
+
+    <section>
+      <h2>Goals</h2>
+      <p>
+        My short-term goal is to strengthen my knowledge of front-end 
+        technologies including HTML, CSS, and JavaScript. Long-term, I aim 
+        to grow into a full-stack developer and work on projects that 
+        positively impact communities and businesses.
+      </p>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <p>
+        Outside of coding, I enjoy reading, designing,browsing and
+        sports. These help me stay creative and balanced 
+        while learning and working on development projects.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+    </div>
+    <p>
+      &copy; <span id="year"></span> | Jones Makafui Awuah | Accra/Ghana
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

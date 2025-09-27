@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Jones Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Jones Chamber of Commerce — supporting businesses and community growth.">
+  <meta name="author" content="Jones Makafui Awuah">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Jones Chamber of Commerce">
+  <meta property="og:description" content="Discover, connect, and join the Jones Chamber of Commerce.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:url" content="https://yourchamberdomain.com">
+
+  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="branding">
+      <img src="images/logo.jpeg" alt="Chamber Logo" class="logo">
+      <h1>Jones Chamber of Commerce</h1>
+    </div>
+
+    <div class="header-controls">
+      <!-- icons -->
+      <div class="header-icons" aria-hidden="false">
+        <button id="weatherBtn" class="icon-btn weather-btn" aria-label="Current weather" title="Current weather">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="17" cy="7" r="3" fill="currentColor" />
+              <path d="M6.5 14.5a4.5 4.5 0 0 1 4.5-4.5h.5" />
+              <path d="M16 17H7a4 4 0 0 1 0-8 4.5 4.5 0 0 1 4.28 3.08" />
+            </g>
+          </svg>
+          <span class="temp-label">--°C</span>
+        </button>
+
+         <button id="profileBtn" class="icon-btn profile-btn" aria-label="User menu" title="User menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="currentColor">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M4 20c0-3.3 2.7-6 8-6s8 2.7 8 6"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <!-- hamburger -->
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <!-- nav -->
+      <nav id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Theme Toggle Icon -->
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"/></svg>
+    </button>
+  </header>
+
+   <main class="join-container">
+  <!-- Form Column -->
+  <section class="join-form">
+    <h2>Membership Application Form</h2>
+    <form method="get" action="thankyou.html" id="joinForm">
+      <label>
+        First Name
+        <input type="text" name="first" required autocomplete="given-name" title="Enter your first name">
+      </label>
+      <label>
+        Last Name
+        <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
+      </label>
+      <label>
+        Title
+        <input type="text" name="title" autocomplete="organization-title" 
+               pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 letters, spaces or hyphens">
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com">
+      </label>
+      <label>
+        Cell Phone
+        <input type="tel" name="phone" required autocomplete="tel" placeholder="987-555-1234">
+      </label>
+      <label>
+        Organization
+        <input type="text" name="organization" required autocomplete="organization">
+      </label>
+      <label>
+        Business Description
+        <textarea name="description" title="Briefly describe your business"></textarea>
+      </label>
+      <label>
+        Membership Level
+        <select name="membership" required>
+          <option value="np">Non Profit Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <button type="submit" class="submit-btn">Apply</button>
+    </form>
+  </section>
+
+  <!-- Membership Levels Column -->
+<aside class="membership-levels">
+  <h2>Membership Levels</h2>
+
+  <div class="level-card np">
+    <h3>Non Profit Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-np">Learn More</button>
+  </div>
+
+  <div class="level-card bronze">
+    <h3>Bronze Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-bronze">Learn More</button>
+  </div>
+
+  <div class="level-card silver">
+    <h3>Silver Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-silver">Learn More</button>
+  </div>
+
+  <div class="level-card gold">
+    <h3>Gold Membership Level</h3>
+    <button class="learn-btn" data-modal="modal-gold">Learn More</button>
+  </div>
+</aside>
+
+<!-- Modals -->
+<div id="modal-np" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Non-Profit Membership</h3>
+    <p><em>Designed for charitable, educational, and community-focused organizations.</em></p>
+    <ul>
+      <li>Discounted membership fees to support non-profit operations.</li>
+      <li>Access to chamber networking events and community programs.</li>
+      <li>Listing in the chamber directory under “Community Partners.”</li>
+      <li>Opportunities to collaborate on service projects and local initiatives.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-bronze" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Bronze Membership</h3>
+    <p><em>Best for small businesses or startups looking to grow visibility.</em></p>
+    <ul>
+      <li>Full directory listing with contact details and business description.</li>
+      <li>Access to monthly chamber networking mixers.</li>
+      <li>Invitations to selected training workshops and seminars.</li>
+      <li>Recognition as a Bronze Member on chamber publications.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-silver" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Silver Membership</h3>
+    <p><em>Ideal for established businesses seeking greater exposure and influence.</em></p>
+    <ul>
+      <li>All Bronze Member benefits.</li>
+      <li>Enhanced directory listing with logo and website link.</li>
+      <li>Featured spotlight opportunity on the chamber website once a year.</li>
+      <li>Discounted booth space at chamber expos and events.</li>
+      <li>Access to Silver-only networking roundtables.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-gold" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Gold Membership</h3>
+    <p><em>For leaders who want maximum visibility and premium benefits.</em></p>
+    <ul>
+      <li>All Silver Member benefits.</li>
+      <li>Premium placement in the online directory.</li>
+      <li>Logo featured at chamber events and on promotional materials.</li>
+      <li>Priority sponsorship opportunities.</li>
+      <li>Complimentary tickets to the annual business gala.</li>
+      <li>Direct access to chamber leadership and policy discussions.</li>
+    </ul>
+  </div>
+</div>
+
+</main>
+
+  <footer>
+    <div class="footer-left">
+      <p><strong>Jones Chamber of Commerce</strong></p>
+      <p>U98 Highlife Street</p>
+      <p>Jones, Ghana 333</p>
+      <p><a href="mailto:info@jonescc.org">info@jonescc.org</a></p>
+      <p>(233) 24-340-6600</p>
+    </div>
+    <div class="footer-center">
+      <a href="#"><img src="images/youtube.jpeg" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.jpeg" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.jpeg" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-right">
+      <p>WDD231 Class Project</p>
+      <p>Jones Makafui Awuah</p>
+      <p>&copy; <span id="year"></span> Jones Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  
+
+
+
+  <script>
+    // Footer year + last modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+
+
+
+  <script>
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".learn-btn");
+  const modals = document.querySelectorAll(".modal");
+  const closes = document.querySelectorAll(".close-modal");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modalId = btn.dataset.modal;
+      document.getElementById(modalId).style.display = "flex";
+    });
+  });
+
+  closes.forEach(close => {
+    close.addEventListener("click", () => {
+      close.closest(".modal").style.display = "none";
+    });
+  });
+
+  window.addEventListener("click", e => {
+    modals.forEach(modal => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  });
+});
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sunrise Tech Solutions",
+    "address": "123 Innovation Drive, Accra, Ghana",
+    "phone": "+233 24 123 4567",
+    "website": "https://sunrisetech.com",
+    "image": "sunrise.png",
+    "membership": 3,
+    "description": "Leading IT services provider specializing in cloud computing and cybersecurity."
+  },
+  {
+    "name": "Golden Harvest Foods",
+    "address": "456 Market Street, Kumasi, Ghana",
+    "phone": "+233 20 987 6543",
+    "website": "https://goldenharvest.com",
+    "image": "harvest.png",
+    "membership": 2,
+    "description": "Organic food products sourced locally and distributed nationwide."
+  },
+  {
+    "name": "EcoBuild Ghana",
+    "address": "789 Green Lane, Tamale, Ghana",
+    "phone": "+233 30 112 3344",
+    "website": "https://ecobuild.com",
+    "image": "ecobuild.png",
+    "membership": 1,
+    "description": "Sustainable construction company building eco-friendly housing."
+  },
+  {
+    "name": "Kwame & Sons Transport",
+    "address": "12 Transit Avenue, Cape Coast, Ghana",
+    "phone": "+233 50 667 8899",
+    "website": "https://kwametransport.com",
+    "image": "transport.jpg",
+    "membership": 2,
+    "description": "Reliable intercity transport services with modern buses."
+  },
+  {
+    "name": "Akwaaba Tours",
+    "address": "34 Heritage Road, Accra, Ghana",
+    "phone": "+233 24 445 6677",
+    "website": "https://akwaabatours.com",
+    "image": "akwaaba.webp",
+    "membership": 3,
+    "description": "Tourism company offering unique cultural and historical experiences."
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "55 Learning Street, Takoradi, Ghana",
+    "phone": "+233 55 223 3344",
+    "website": "https://brightfuture.edu",
+    "image": "academy.png",
+    "membership": 1,
+    "description": "Private school focused on science, technology, and innovation."
+  },
+  {
+    "name": "Unity Bank Ghana",
+    "address": "78 Finance Avenue, Accra, Ghana",
+    "phone": "+233 30 445 5566",
+    "website": "https://unitybank.com",
+    "image": "bank.jpeg",
+    "membership": 3,
+    "description": "Trusted financial institution providing banking and investment services."
+  }
+]

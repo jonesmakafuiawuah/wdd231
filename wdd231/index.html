@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Course Home Page for Jones Makafui Awuah — WDD231" />
+  <meta name="author" content="Jones Makafui Awuah">
+  <title>WDD231 — Course Home</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS (defer) -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <!-- HEADER: logo svg, name span, hamburger for small screens -->
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="images/logo.svg" alt="AJ Consult style logo" class="logo">
+      <span class="site-name">Jones Makafui Awuah</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="has-sub">
+          <a href="about.html">About Me ▾</a>
+          <ul class="submenu">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <a href="#">Chamber ▾</a>
+          <ul class="submenu">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="finals.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+  <h1>Home</h1>
+  <p class="lead">📚 Welcome!</p>
+  <p>This site is a showcase of my <strong>WDD231 journey</strong>.</p>
+  <p>Here, you’ll find assignments, projects, and courses. 🚀</p>
+  <p>Every page is built with responsiveness, accessibility, and best practices in mind. ✨</p>
+</section>
+
+    <section class="courses">
+      <h2>Certificate Courses</h2>
+
+      <div class="controls">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+
+      <div id="course-grid" class="course-grid" aria-live="polite"></div>
+
+      <p class="credits">Total credits: <span id="total-credits">0</span></p>
+    </section>
+
+    <section class="about-snippet">
+      <h2>About Me</h2>
+      <p>Hi, I’m Jones Makafui Awuah 👋.
+I have a passion for web design and development with a growing background in HTML, CSS, JavaScript, and responsive design. My goals are to strengthen my technical skills, build real-world projects, and prepare for a career in software development.
+
+I enjoy solving problems through clean, user-friendly design, and I’m motivated by the opportunity to create digital solutions that make life easier for others. This course is an important step in helping me become more confident and skilled as a developer, while also preparing me for larger projects such as building business websites and full-stack applications..</p>
+    </section>
+
+    <section class="contact-snippet">
+      <h2>Contact</h2>
+      <p>
+      Phone Number: +233243406600 |
+      Email: jonesawuahmakafui@gmail.com
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="socials">
+      <a href="https://github.com/yourgithubjonesmakafuiawuah" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/jones-awuah-26aab0219" target="_blank" rel="noopener">LinkedIn</a> 
+      
+    </p>
+
+    <p>&copy; <span id="year"></span> | Jones Makafui Awuah | Accra/Ghana </p>
+    <p id="lastModified">Last Modified: </p>
+  </footer>
+</body>
+</html>
